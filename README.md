@@ -1,3 +1,4 @@
+该项目包含react、react-router-dom、redux、react-mobx、mobx-state-tree、hooks基本用法示例
 **项目执行命令**
 1. 安装依赖
     `yarn install`
