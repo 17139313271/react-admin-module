@@ -1,0 +1,117 @@
+/* 该容器使用 display布局 */
+
+.ly-flex {
+    display: flex;
+}
+
+.ly-block {
+    display: block;
+}
+
+.ly-inline-block {
+    display: inline-block;
+}
+
+.ly-none {
+    display: none;
+}
+
+/* 元素列布局 */
+.ly-flex-col {
+    flex-direction: column;
+}
+
+/* 元素行布局 */
+.ly-flex-row {
+    flex-direction: row;
+}
+
+/* 元素换行 */
+.ly-flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+/* 元素不换行 */
+.ly-flex-wrap-nowrap {
+    flex-wrap: nowrap;
+}
+
+/* 100%填充 */
+
+.ly-flex-1 {
+    flex: 1;
+}
+
+/* 垂直方向居中对齐 */
+.ly-flex-ali-center {
+    align-items: center;
+}
+
+/* 垂直方向上对齐 */
+.ly-flex-ali-start {
+    align-items: flex-start;
+}
+
+/* 垂直方向下对齐 */
+.ly-flex-ali-end {
+    align-items: flex-end;
+}
+
+/* 文本左对齐 */
+.ly-text-left {
+    text-align: left;
+}
+
+/* 文本居中对齐 */
+.ly-text-center {
+    text-align: center;
+}
+
+/* 文本右对齐 */
+.ly-text-right {
+    text-align: right;
+}
+
+/* 容器左对齐 */
+
+.ly-flex-just-start {
+    justify-content: flex-start;
+}
+
+/* 容器俩端对齐 */
+
+.ly-flex-just-between {
+    justify-content: space-between;
+}
+
+/* 容器平均分布 */
+
+.ly-flex-just-around {
+    justify-content: space-around;
+}
+
+/* 容器居中对齐 */
+
+.ly-flex-just-center {
+    justify-content: center;
+}
+
+/* 容器右边对齐 */
+
+.ly-flex-just-end {
+    justify-content: flex-end;
+}
+
+.ly-text-over {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ly-text-over-mest {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

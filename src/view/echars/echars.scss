@@ -1,0 +1,11 @@
+.echars-box{
+  width: calc(100vw - 300px);
+  .echars-item{
+
+    margin-bottom: 80px;
+
+  }
+  .echars-item:last-child{
+    margin-bottom: 0;
+  }
+}

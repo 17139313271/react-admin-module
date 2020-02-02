@@ -1,0 +1,19 @@
+.login-box {
+    width: 100vw;
+    height: 100vh;
+    background: #2d3a4b;
+
+    .login-form {
+        width: 300px;
+        height: 400px;
+
+        .ant-btn,
+        .ant-input {
+            height: 40px;
+        }
+
+        .login-form-button {
+            width: 100%;
+        }
+    }
+}

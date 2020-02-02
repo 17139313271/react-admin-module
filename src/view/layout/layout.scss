@@ -1,0 +1,41 @@
+.layout-box {
+    height: 100vh;
+
+    .ant-layout {
+        height: 100vh;
+    }
+
+    .logo-name {
+        line-height: 60px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .layout-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        padding: 0 30px !important;
+        background: #fff;
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60px;
+    }
+
+    .layout-box {
+        height: calc(100vh - 60px);
+        padding: 24px;
+        margin: 24px 16px;
+        overflow: scroll;
+        background: #fff;
+    }
+
+    .layout-content {
+        height: auto;
+    }
+}
