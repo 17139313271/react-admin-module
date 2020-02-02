@@ -19,6 +19,7 @@ class StateManagement extends Component {
   render() {
     return (
       <div>
+        <p>简单的react后台模板，欢迎各位大牛批评指导，qq:1415009351</p>
         <div className="stateManagement-item">
           <h4>redux 示例</h4>
           <ReduxPage></ReduxPage>
