@@ -1,11 +1,11 @@
-.echars-box{
-  width: calc(100vw - 300px);
-  .echars-item{
+.echars-box {
+    width: calc(100vw - 300px);
 
-    margin-bottom: 80px;
+    .echars-item {
+        margin-bottom: 80px;
+    }
 
-  }
-  .echars-item:last-child{
-    margin-bottom: 0;
-  }
+    .echars-item:last-child {
+        margin-bottom: 0;
+    }
 }

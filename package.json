@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@loadable/component": "^5.12.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -19,6 +21,7 @@
     "immutability-helper": "^3.0.1",
     "immutable": "^4.0.0-rc.12",
     "js-export-excel": "^1.1.2",
+    "loadable-components": "^2.2.3",
     "mobx": "^5.15.3",
     "mobx-logger": "^0.7.1",
     "mobx-react": "^6.1.4",
@@ -39,7 +42,8 @@
     "redux-immutable": "^4.0.0",
     "redux-logger": "^3.0.6",
     "redux-promise": "^0.6.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "why-did-you-update": "^1.0.6"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -48,7 +52,7 @@
     "eject": "react-app-rewired eject",
     "lint": "run-p eslint stylelint",
     "eslint": "eslint src",
-    "stylelint": "stylelint src",
+    "stylelint": "stylelint **/*.scss",
     "fix": "run-p fixes fixcss",
     "fixes": "eslint --fix .",
     "fixcss": "stylelint src --fix",

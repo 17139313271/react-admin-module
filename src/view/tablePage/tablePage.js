@@ -7,9 +7,9 @@ import BorderTable from "../../components/componentPage/borderTable"; //带边�
 import FoldTable from "../../components/componentPage/foldTable"; //可折叠展开表格
 import TreeTable from "../../components/componentPage/treeTable"; //树形表格示例
 import FixHeaderTable from "../../components/componentPage/fixHeaderTable"; //固定顶部表格示例；
-import FixedColTable from '../../components/componentPage/fixedColTable';  //固定列表格示例；
-import NextTable from '../../components/componentPage/nextTable'; //嵌套表单示例
-import DrapTable from '../../components/componentPage/drapTable'; // 拖拽表单示例
+import FixedColTable from "../../components/componentPage/fixedColTable"; //固定列表格示例；
+import NextTable from "../../components/componentPage/nextTable"; //嵌套表单示例
+import DrapTable from "../../components/componentPage/drapTable"; // 拖拽表单示例
 class TablePage extends Component {
   render() {
     return (

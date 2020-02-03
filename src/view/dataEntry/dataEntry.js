@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./dataEntry.scss";
 import CheckBox from "../../components/dataEntry/checkBox"; //复选框组件示例
 import CascadeChiode from "../../components/dataEntry/cascadeChoice"; //级联选择组件示例
-import SelectChoice from '../../components/dataEntry/selectChoice';   //下拉选择组件示例
-import TreeSelect from '../../components/dataEntry/treeSelect';      //树选择组件示例
-import Transfer from '../../components/dataEntry/transfer';      //穿梭框
+import SelectChoice from "../../components/dataEntry/selectChoice"; //下拉选择组件示例
+import TreeSelect from "../../components/dataEntry/treeSelect"; //树选择组件示例
+import Transfer from "../../components/dataEntry/transfer"; //穿梭框
 class DataEntry extends Component {
   render() {
     return (

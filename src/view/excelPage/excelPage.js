@@ -99,7 +99,7 @@ function importExcel(file, that) {
       let data = []; // 存储获取到的数据
       // 遍历每张工作表进行读取（这里默认只读取第一张表）
       for (const sheet in workbook.Sheets) {
-        if (workbook.Sheets.hasOwnProperty(sheet)) {
+        if (workbook.Sheets.hasOwnProperty.call(workbook.Sheets, sheet)) {
           // 利用 sheet_to_json 方法将 excel 转成 json 数据
           data = data.concat(XLSX.utils.sheet_to_json(workbook.Sheets[sheet]));
           that.setState({

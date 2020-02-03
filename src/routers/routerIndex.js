@@ -1,15 +1,25 @@
-import EecharsPage from "../view/echars/echars"; // echars表单路由
-import IconPage from "../view/iconPage/iconPage"; // 图标路由
-import EditorPage from "../view/componentPage/editorPage/editorPage"; //编辑器路由
-import UploadPage from "../view/componentPage/uploadPage/uploadPage"; //图片上传组件
-import ScrollTop from "../view/componentPage/scrollTop/scrollTop"; //回到顶部组件
-import Feedback from "../components/componentPage/feedback"; //用户反馈组件
-import TablePage from "../view/tablePage/tablePage"; //表格组价示例
-import FormPage from "../view/formPage/formPage"; //表单组件示例
-import DataEntry from "../view/dataEntry/dataEntry"; //数据录入组件示例
-import DataShow from "../view/dataShow/dataShow"; //数据展示组件示例
-import StateManagement from "../view/stateManagement/stateManagement"; //状态管理示例
-import ExcelPage from '../view/excelPage/excelPage';     //execl操作示例
+import loadable from "@loadable/component";
+const EecharsPage = loadable(() => import("../view/echars/echars")); // echars表单路由
+const IconPage = loadable(() => import("../view/iconPage/iconPage")); // 图标路由
+const EditorPage = loadable(() =>
+  import("../view/componentPage/editorPage/editorPage")
+); //编辑器路由
+const UploadPage = loadable(() =>
+  import("../view/componentPage/uploadPage/uploadPage")
+); //图片上传组件
+const ScrollTop = loadable(() =>
+  import("../view/componentPage/scrollTop/scrollTop")
+); //回到顶部组件
+const Feedback = loadable(() => import("../components/componentPage/feedback")); //用户反馈组件
+const TablePage = loadable(() => import("../view/tablePage/tablePage")); //表格组价示例
+const FormPage = loadable(() => import("../view/formPage/formPage")); //表单组件示例
+const DataEntry = loadable(() => import("../view/dataEntry/dataEntry")); //数据录入组件示例
+const DataShow = loadable(() => import("../view/dataShow/dataShow")); //数据展示组件示例
+const StateManagement = loadable(() =>
+  import("../view/stateManagement/stateManagement")
+); //状态管理示例
+const ExcelPage = loadable(() => import("../view/excelPage/excelPage")); //execl操作示例
+
 export default [
   {
     path: "/echarsPage",

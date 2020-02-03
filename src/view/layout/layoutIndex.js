@@ -6,6 +6,7 @@ import HeaderPage from "../../components/layout/headerPage";
 import cookie from "react-cookies";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
+
 const { Sider, Content } = Layout;
 
 class Index extends Component {

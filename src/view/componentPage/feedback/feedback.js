@@ -5,7 +5,7 @@ class Feedback extends Component {
   render() {
     return (
       <div>
-        <FeedbackPag></FeedbackPag>e
+        <FeedbackPage></FeedbackPage>
       </div>
     );
   }

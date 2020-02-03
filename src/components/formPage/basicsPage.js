@@ -42,7 +42,9 @@ class BasicsPage extends Component {
             rules: [{ required: true, message: "请输入你的账号!" }]
           })(
             <Input
-              prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
+              prefix={
+                <Icon type="user" style={{ color: "rgba(0, 0, 0, .25)" }} />
+              }
               placeholder="输入账号"
             />
           )}
@@ -55,7 +57,9 @@ class BasicsPage extends Component {
             rules: [{ required: true, message: "请输入你的密码!" }]
           })(
             <Input
-              prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />}
+              prefix={
+                <Icon type="lock" style={{ color: "rgba(0, 0, 0, .25)" }} />
+              }
               type="password"
               placeholder="输入密码"
             />

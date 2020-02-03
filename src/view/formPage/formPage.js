@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import "./formPage.scss";
 import BasicsPage from "../../components/formPage/basicsPage"; //基础表单
 import DynamicPage from "../../components/formPage/dynamicPage"; //动态表单示例
-import TimePage from '../../components/formPage/timePage';  //时间控件表单示例
-import ShowTable from '../../components/formPage/showTable'; //数据显示组件示例
+import TimePage from "../../components/formPage/timePage"; //时间控件表单示例
+import ShowTable from "../../components/formPage/showTable"; //数据显示组件示例
 class FormPage extends Component {
   render() {
     return (

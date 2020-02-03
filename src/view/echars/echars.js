@@ -30,7 +30,7 @@ class Echars extends Component {
   handleHeight = () => {
     this.setState(
       {
-        echarsItemWidth: this.refs.echarsItem.clientWidth
+        echarsItemWidth: this.echarsItem.clientWidth
       },
       () => {
         //初始化折线图
@@ -190,7 +190,12 @@ class Echars extends Component {
   render() {
     return (
       <div className="echars-box">
-        <div className="echars-item" ref="echarsItem">
+        <div
+          className="echars-item"
+          ref={e => {
+            this.echarsItem = e;
+          }}
+        >
           <div
             id="main"
             style={{ width: this.state.echarsItemWidth, height: 400 }}

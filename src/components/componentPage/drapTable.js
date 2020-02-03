@@ -57,7 +57,6 @@ const rowTarget = {
 
     // Time to actually perform the action
     props.moveRow(dragIndex, hoverIndex);
-
     // Note: we're mutating the monitor item here!
     // Generally it's better to avoid mutations,
     // but it's good here for the sake of performance

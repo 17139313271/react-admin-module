@@ -11,7 +11,9 @@ class MobxTree extends Component {
     return (
       <div>
         <p>{this.props.store.stateDisplay}</p>
-        <button onClick={e => this.props.store.addTodo(randomId(), "New Task")}>
+        <button
+          onClick={() => this.props.store.addTodo(randomId(), "New Task")}
+        >
           添加
         </button>
         {values(this.props.store.todos).map((todo, index) => (
@@ -30,7 +32,7 @@ class TodoView extends Component {
         <input
           type="checkbox"
           checked={this.props.todo.done}
-          onChange={e => this.props.todo.toggle()}
+          onChange={() => this.props.todo.toggle()}
         />
         <input
           type="text"
