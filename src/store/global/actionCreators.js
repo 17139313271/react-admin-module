@@ -25,3 +25,15 @@ export const layoutFlagFun = () => ({
 export const stateDisplayFun = () => ({
   type: constants.STATE_DISPLAY
 });
+
+// 点击菜单tag数据
+export const menuListFun = payload => ({
+  type: constants.LAYOUT_MENUlIST,
+  payload
+});
+
+//清除tag菜单数据
+
+export const clearMenuList = () => ({
+  type: constants.LAYOUT_CLEARMENUlIST
+});

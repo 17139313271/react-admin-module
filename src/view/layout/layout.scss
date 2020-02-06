@@ -1,4 +1,4 @@
-.layout-box {
+.layout-page {
     height: 100vh;
 
     .ant-layout {
@@ -30,7 +30,7 @@
     .layout-box {
         height: calc(100vh - 60px);
         padding: 24px;
-        margin: 24px 16px;
+        margin: 0 16px 20px;
         overflow: scroll;
         background: #fff;
     }

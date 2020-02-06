@@ -1,0 +1,11 @@
+.tagPage-scroll {
+    width: calc(100vw - 250px);
+    height: 24px;
+    margin: 10px 14px;
+    overflow-x: scroll;
+
+    .tagPage-box {
+        width: auto;
+    }
+}
+.tagPage-scroll::-webkit-scrollbar { display: none; }

@@ -67,7 +67,8 @@ const defaultState = fromJS({
       icon: "bar-chart",
       path: "/excelPage"
     }
-  ]
+  ],
+  menuList: []
 });
 
 export default defaultState;
