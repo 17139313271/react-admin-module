@@ -30,11 +30,19 @@ class NavLeft extends Component {
     unlisten();
   }
   routerMenuFun() {
+    let menuObj = {
+      name: "",
+      path: ""
+    };
     this.props.navList.forEach((item, index) => {
       if (window.location.pathname === item.path) {
         this.setState({
           selectedIndex: item.path
         });
+        menuObj = {
+          name: item.name,
+          path: item.path
+        };
       } else {
         item.list &&
           item.list.forEach(itemOne => {
@@ -43,10 +51,18 @@ class NavLeft extends Component {
                 selectedIndex: itemOne.path,
                 defaultOpenIndex: index.toString()
               });
+              menuObj = {
+                name: itemOne.name,
+                path: itemOne.path
+              };
             }
           });
       }
     });
+    if (this.props.menuList.length === 0) {
+      this.props.menuListFun(menuObj);
+    }
+    this.props.menuNameFun(menuObj.name);
   }
   handleClick = e => {
     this.setState({
@@ -56,7 +72,6 @@ class NavLeft extends Component {
       name: e.item.props.name,
       path: e.key
     };
-
     if (
       JSON.stringify(this.props.menuList).indexOf(JSON.stringify(menuObj)) ===
       -1

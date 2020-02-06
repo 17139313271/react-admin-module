@@ -21,16 +21,6 @@ class Index extends Component {
       this.props.history.push("/login");
       this.props.clearMenuList();
     }
-    console.log("3453453");
-    //获取默认路由数据
-    this.props.navList.forEach(item => {
-      if (item.path === "/") {
-        this.setState({
-          menuName: item.name
-        });
-        this.props.menuListFun({ name: item.name, path: item.path });
-      }
-    });
   }
   //子组件点击左侧导航回调函数
   menuNameFun(name) {
