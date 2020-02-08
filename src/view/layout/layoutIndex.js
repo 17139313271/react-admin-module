@@ -19,7 +19,7 @@ class Index extends Component {
     // 判断是否登录
     if (!cookie.load("token")) {
       this.props.history.push("/login");
-      this.props.clearMenuList();
+      this.props.clearMenuList({ typeId: 1 });
     }
   }
   //子组件点击左侧导航回调函数
@@ -43,8 +43,14 @@ class Index extends Component {
             ></NavLeft>
           </Sider>
           <Layout>
-            <HeaderPage menuName={this.state.menuName} />
-            <TagPage menuNameFun={this.menuNameFun.bind(this)}></TagPage>
+            <HeaderPage
+              menuName={this.state.menuName}
+              clearMenuList={this.props.clearMenuList.bind(this)}
+            />
+            <TagPage
+              menuNameFun={this.menuNameFun.bind(this)}
+              clearMenuList={this.props.clearMenuList.bind(this)}
+            ></TagPage>
             <Content className="layout-box">
               <div className="layout-content">{this.props.children}</div>
             </Content>
@@ -67,8 +73,8 @@ const mapDispatch = dispatch => ({
   menuListFun(menuList) {
     dispatch(actionCreators.menuListFun(menuList));
   },
-  clearMenuList() {
-    dispatch(actionCreators.clearMenuList());
+  clearMenuList(clearObj) {
+    dispatch(actionCreators.clearMenuList(clearObj));
   }
 });
 

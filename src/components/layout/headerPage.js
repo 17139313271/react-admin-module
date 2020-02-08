@@ -11,7 +11,7 @@ class HeaderPage extends Component {
     if (key === "3") {
       cookie.save("token", "");
       history.push("/login");
-      this.props.clearMenuList();
+      this.props.clearMenuList({ typeId: 1 });
     }
   }
   render() {
@@ -64,9 +64,6 @@ const mapDispatch = dispatch => ({
   },
   menuListFun(menuList) {
     dispatch(actionCreators.menuListFun(menuList));
-  },
-  clearMenuList() {
-    dispatch(actionCreators.clearMenuList());
   }
 });
 

@@ -29,6 +29,7 @@ class Editor extends Component {
 
   handleEditorChange = editorState => {
     this.setState({ editorState });
+    this.props.editorCallback(editorState.toHTML());
   };
 
   render() {

@@ -7,7 +7,8 @@ function EditorPage() {
   return (
     <div className="editor-box">
       <h1>
-        编辑器示例，此编辑器能满足一般的需求场景，相关链接：https://www.yuque.com/braft-editor/be/lzwpnr
+        编辑器示例(ctrl+S
+        保存)，此编辑器能满足一般的需求场景，相关链接：https://braft.margox.cn
       </h1>
       <Editor editorCallback={editorCallback.bind(this)}></Editor>
       <h5>编辑内容回显：</h5>

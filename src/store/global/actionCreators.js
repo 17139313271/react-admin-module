@@ -34,6 +34,7 @@ export const menuListFun = payload => ({
 
 //清除tag菜单数据
 
-export const clearMenuList = () => ({
-  type: constants.LAYOUT_CLEARMENUlIST
+export const clearMenuList = payload => ({
+  type: constants.LAYOUT_CLEARMENUlIST,
+  payload
 });

@@ -31,22 +31,37 @@ class TagPage extends Component {
     this.props.menuNameFun(item.name);
     history.push(item.path);
   }
+  tagCloneFun(index) {
+    this.props.clearMenuList({ typeId: 2, index: index });
+  }
   render() {
     return (
       <div className="tagPage-scroll">
         <div className="ly-flex ly-flex-wrap-nowrap tagPage-box">
           {this.props.menuList &&
-            this.props.menuList.map(item => {
+            this.props.menuList.map((item, index) => {
               return (
-                <Tag
-                  className="tags-item "
-                  closable
-                  color={window.location.pathname === item.path ? "blue" : ""}
-                  onClick={() => this.tagMenuOpen(item)}
-                  key={item.path}
-                >
-                  {item.name}
-                </Tag>
+                <div key={item.path}>
+                  {window.location.pathname === item.path ? (
+                    <Tag
+                      className="tags-item "
+                      color="blue"
+                      onClick={() => this.tagMenuOpen(item)}
+                      onClose={() => this.tagCloneFun(index)}
+                    >
+                      {item.name}
+                    </Tag>
+                  ) : (
+                    <Tag
+                      className="tags-item "
+                      closable
+                      onClick={() => this.tagMenuOpen(item)}
+                      onClose={() => this.tagCloneFun(index)}
+                    >
+                      {item.name}
+                    </Tag>
+                  )}
+                </div>
               );
             })}
         </div>

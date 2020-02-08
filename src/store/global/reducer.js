@@ -10,7 +10,7 @@ export default (state = defaultState, action) => {
     case constants.LAYOUT_MENUlIST:
       return addMenuList(state, action);
     case constants.LAYOUT_CLEARMENUlIST:
-      return clearMenuList(state);
+      return clearMenuList(state, action);
     case constants.STATE_DISPLAY:
       return state.set("stateDisplay", 222);
     default:
@@ -30,17 +30,20 @@ const addMenuList = (state, action) => {
     menuList: fromJS(oldMenuList.push(action.payload))
   });
 };
-//清除tag菜单数据
-const clearMenuList = state => {
-  return state.merge({
-    menuList: fromJS([])
-  });
+//清除tag菜单数据 typeId 1 为全部清除，2为删除
+const clearMenuList = (state, action) => {
+  let MenuList = state.get("menuList");
+  switch (action.payload.typeId) {
+    case 1: {
+      return state.merge({
+        menuList: fromJS([])
+      });
+    }
+    case 2: {
+      let oldMenuList = MenuList.splice(action.payload.index, 1);
+      return state.merge({
+        menuList: fromJS(oldMenuList)
+      });
+    }
+  }
 };
-/*登录输入框修改*/
-// const loginInput = (state, action) => {
-//   let oldLogin = state.get("postData").toJS();
-//   let newLogin = Object.assign(oldLogin, action.payload);
-//   return state.merge({
-//     loginData: fromJS(newLogin)
-//   });
-// };
