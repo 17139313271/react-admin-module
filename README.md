@@ -6,7 +6,7 @@
     `yarn start`
 3. 构建项目
    `yarn build`  
-4. 单元测试   
+4. 单元测试   (mobx装饰器报错)
  `yarn test`
 5. 代码检测
   `yarn lint`
