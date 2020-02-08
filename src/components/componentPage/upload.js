@@ -59,7 +59,7 @@ class UploadBox extends Component {
         onChange={this.handleChange}
       >
         {imageUrl ? (
-          <img src={imageUrl} alt="avatar" style={{ width: "100%" }} />
+          <img src={imageUrl} alt="avatar" style={{ width: "100%", }} />
         ) : (
           uploadButton
         )}

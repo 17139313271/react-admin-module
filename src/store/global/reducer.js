@@ -45,5 +45,7 @@ const clearMenuList = (state, action) => {
         menuList: fromJS(oldMenuList)
       });
     }
+    default:
+      return state;
   }
 };

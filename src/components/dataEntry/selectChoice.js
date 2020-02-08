@@ -14,7 +14,7 @@ class SelectChoice extends Component {
       <div>
         <Select
           defaultValue="lucy"
-          style={{ width: 120 }}
+          style={{ width: 120, }}
           onChange={handleChange}
         >
           <Option value="jack">Jack</Option>

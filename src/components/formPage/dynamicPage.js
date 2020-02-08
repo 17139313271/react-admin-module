@@ -84,7 +84,7 @@ class DynamicPage extends Component {
         })(
           <Input
             placeholder="请输入"
-            style={{ width: "60%", marginRight: 8 }}
+            style={{ width: "60%", marginRight: 8, }}
           />
         )}
         {keys.length > 1 ? (
@@ -100,7 +100,7 @@ class DynamicPage extends Component {
       <Form onSubmit={this.handleSubmit}>
         {formItems}
         <Form.Item {...formItemLayoutWithOutLabel}>
-          <Button type="dashed" onClick={this.add} style={{ width: "60%" }}>
+          <Button type="dashed" onClick={this.add} style={{ width: "60%", }}>
             <Icon type="plus" /> 增加
           </Button>
         </Form.Item>

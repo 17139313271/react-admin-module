@@ -17,7 +17,7 @@ class TreeSelectCom extends Component {
     return (
       <TreeSelect
         showSearch
-        style={{ width: 200 }}
+        style={{ width: 200, }}
         value={this.state.value}
         dropdownStyle={{ maxHeight: 400, overflow: "auto" }}
         placeholder="Please select"
@@ -33,7 +33,7 @@ class TreeSelectCom extends Component {
           <TreeNode value="parent 1-1" title="parent 1-1" key="random2">
             <TreeNode
               value="sss"
-              title={<b style={{ color: "#08c" }}>sss</b>}
+              title={<b style={{ color: "#08c", }}>sss</b>}
               key="random3"
             />
           </TreeNode>

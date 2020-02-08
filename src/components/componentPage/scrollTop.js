@@ -51,11 +51,11 @@ class ScrollTop extends Component {
         <div
           className="scroll-text"
           id="handelDocID"
-          style={{ maxHeight: "calc(100vh - 60px)", overflowY: "auto" }}
+          style={{ maxHeight: "calc(100vh - 60px)", overflowY: "auto", }}
         >
           {this.state.testList.map((item, index) => {
             return (
-              <p style={{ lineHeight: 10 }} key={index}>
+              <p style={{ lineHeight: 10, }} key={index}>
                 {item.name}
               </p>
             );

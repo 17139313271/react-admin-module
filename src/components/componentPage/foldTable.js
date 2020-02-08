@@ -45,7 +45,7 @@ class FoldTable extends Component {
         <Table
           columns={columns}
           expandedRowRender={record => (
-            <p style={{ margin: 0 }}>{record.description}</p>
+            <p style={{ margin: 0, }}>{record.description}</p>
           )}
           dataSource={data}
         />

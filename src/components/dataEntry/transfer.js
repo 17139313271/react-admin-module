@@ -67,7 +67,7 @@ class TransferCom extends Component {
           checkedChildren="disabled"
           checked={disabled}
           onChange={this.handleDisable}
-          style={{ marginTop: 16 }}
+          style={{ marginTop: 16, }}
         />
       </div>
     );

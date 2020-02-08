@@ -36,7 +36,7 @@ class Discuss extends Component {
             onClick={this.like}
           />
         </Tooltip>
-        <span style={{ paddingLeft: 8, cursor: "auto" }}>{likes}</span>
+        <span style={{ paddingLeft: 8, cursor: "auto", }}>{likes}</span>
       </span>,
       <span key=' key="comment-basic-dislike"'>
         <Tooltip title="Dislike">
@@ -46,7 +46,7 @@ class Discuss extends Component {
             onClick={this.dislike}
           />
         </Tooltip>
-        <span style={{ paddingLeft: 8, cursor: "auto" }}>{dislikes}</span>
+        <span style={{ paddingLeft: 8, cursor: "auto", }}>{dislikes}</span>
       </span>,
       <span key="comment-basic-reply-to">Reply to</span>
     ];

@@ -16,7 +16,7 @@ class Login extends Component {
               })(
                 <Input
                   prefix={
-                    <Icon type="user" style={{ color: "rgba(0, 0, 0, .25)" }} />
+                    <Icon type="user" style={{ color: "rgba(0, 0, 0, .25)", }} />
                   }
                   placeholder="输入123456"
                 />
@@ -28,7 +28,7 @@ class Login extends Component {
               })(
                 <Input
                   prefix={
-                    <Icon type="lock" style={{ color: "rgba(0, 0, 0, .25)" }} />
+                    <Icon type="lock" style={{ color: "rgba(0, 0, 0, .25)", }} />
                   }
                   type="password"
                   placeholder="输入123456"

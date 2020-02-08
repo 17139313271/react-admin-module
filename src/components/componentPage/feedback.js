@@ -182,7 +182,7 @@ class Feedback extends Component {
               type="info"
             />
           </Spin>
-          <div style={{ marginTop: 16 }}>
+          <div style={{ marginTop: 16, }}>
             Loading state：
             <Switch checked={this.state.loading} onChange={this.toggle} />
           </div>

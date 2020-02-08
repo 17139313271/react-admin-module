@@ -29,7 +29,7 @@ class TreeControl extends Component {
           </TreeNode>
           <TreeNode title="parent 1-1" key="0-0-1">
             <TreeNode
-              title={<span style={{ color: "#1890ff" }}>sss</span>}
+              title={<span style={{ color: "#1890ff", }}>sss</span>}
               key="0-0-1-0"
             />
           </TreeNode>

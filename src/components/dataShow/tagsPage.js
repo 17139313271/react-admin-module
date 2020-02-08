@@ -65,7 +65,7 @@ class TagsPage extends Component {
             ref={this.saveInputRef}
             type="text"
             size="small"
-            style={{ width: 78 }}
+            style={{ width: 78, }}
             value={inputValue}
             onChange={this.handleInputChange}
             onBlur={this.handleInputConfirm}
@@ -75,7 +75,7 @@ class TagsPage extends Component {
         {!inputVisible && (
           <Tag
             onClick={this.showInput}
-            style={{ background: "#fff", borderStyle: "dashed" }}
+            style={{ background: "#fff", borderStyle: "dashed", }}
           >
             <Icon type="plus" /> New Tag
           </Tag>
