@@ -158,8 +158,6 @@ D
 src/server/config.js,0\a\0a59457a789eb3e219dea436bc1463a8fd399cd0
 I
 src/server/login/login.js,b\5\b538ac76686d1acd7badd8e200a587001c2fb8e6
-O
-coverage/lcov-report/index.html,d\4\d41f4826c3c092a0915ae3306b427ca8e58b8795
 N
 src/_test_/login/login.test.js,9\f\9f43266a1ffdbbb16ec36d38d32849a906ca86da
 Z

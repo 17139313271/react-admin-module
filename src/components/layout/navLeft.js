@@ -59,7 +59,8 @@ class NavLeft extends Component {
           });
       }
     });
-    if (this.props.menuList.length === 0) {
+    if (this.props.menuList.length === 0 && menuObj.name !== "") {
+      console.log("执行加载");
       this.props.menuListFun(menuObj);
     }
     this.props.menuNameFun(menuObj.name);
@@ -74,7 +75,8 @@ class NavLeft extends Component {
     };
     if (
       JSON.stringify(this.props.menuList).indexOf(JSON.stringify(menuObj)) ===
-      -1
+        -1 &&
+      this.props.menuList.length !== 0
     ) {
       this.props.menuListFun(menuObj);
     }

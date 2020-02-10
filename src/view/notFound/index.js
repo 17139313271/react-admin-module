@@ -4,7 +4,7 @@ class NotFound extends Component {
   render() {
     return (
       <div>
-        <p>错误</p>
+        <p>路由错误</p>
       </div>
     );
   }

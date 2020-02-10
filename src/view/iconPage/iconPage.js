@@ -240,7 +240,7 @@ class IconPage extends Component {
                         key={item.name}
                       >
                         <div className="icon-item ly-flex ly-flex-col ly-flex-ali-center ly-flex-just-center">
-                          <Icon type={item.icon} style={{ fontSize: "20px", }} />
+                          <Icon type={item.icon} style={{ fontSize: "20px" }} />
                           <p>{item.name}</p>
                         </div>
                       </Tooltip>
@@ -259,7 +259,7 @@ class IconPage extends Component {
                         <div className="icon-item ly-flex ly-flex-col ly-flex-ali-center ly-flex-just-center">
                           <Icon
                             type={item.icon}
-                            style={{ fontSize: "20px", }}
+                            style={{ fontSize: "20px" }}
                             theme="filled"
                           />
                           <p>{item.name}</p>

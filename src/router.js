@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import Routers from "./routers/routerIndex";
+import { routerList, cacheRouterList } from "./routers/routerIndex";
 import Login from "./view/login/login";
 import NotFound from "./view/notFound";
 import Layout from "./view/layout/layoutIndex";
 import { Router, Route, Switch } from "react-router-dom";
+import CacheRoute, { CacheSwitch } from "react-router-cache-route";
 import history from "./routers/history";
 
 class ERouter extends Component {
@@ -16,8 +17,18 @@ class ERouter extends Component {
             path="/"
             render={() => (
               <Layout>
-                <Switch>
-                  {Routers.map((item, index) => {
+                <CacheSwitch>
+                  {cacheRouterList.map((item, index) => {
+                    return (
+                      <CacheRoute
+                        key={index}
+                        path={item.path}
+                        exact
+                        render={props => <item.component {...props} />}
+                      />
+                    );
+                  })}
+                  {routerList.map((item, index) => {
                     return (
                       <Route
                         key={index}
@@ -28,7 +39,7 @@ class ERouter extends Component {
                     );
                   })}
                   <Route component={NotFound} />
-                </Switch>
+                </CacheSwitch>
               </Layout>
             )}
           />

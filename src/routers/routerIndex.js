@@ -20,7 +20,7 @@ const StateManagement = loadable(() =>
 ); //状态管理示例
 const ExcelPage = loadable(() => import("../view/excelPage/excelPage")); //execl操作示例
 
-export default [
+export const routerList = [
   {
     path: "/echarsPage",
     name: "EecharsPage",
@@ -45,12 +45,7 @@ export default [
     auth: true,
     component: UploadPage
   },
-  {
-    path: "/scrollTop",
-    name: "ScrollTop",
-    auth: true,
-    component: ScrollTop
-  },
+
   {
     path: "/feedback",
     name: "Feedback",
@@ -63,12 +58,7 @@ export default [
     auth: true,
     component: TablePage
   },
-  {
-    path: "/formPage",
-    name: "FormPage",
-    auth: true,
-    component: FormPage
-  },
+
   {
     path: "/dataEntry",
     name: "DataEntry",
@@ -81,6 +71,16 @@ export default [
     auth: true,
     component: DataShow
   },
+
+  {
+    path: "/excelPage",
+    name: "ExcelPage",
+    auth: true,
+    component: ExcelPage
+  }
+];
+//缓存路由
+export const cacheRouterList = [
   {
     path: "/",
     name: "StateManagement",
@@ -88,9 +88,16 @@ export default [
     component: StateManagement
   },
   {
-    path: "/excelPage",
-    name: "ExcelPage",
+    path: "/formPage",
+    name: "FormPage",
     auth: true,
-    component: ExcelPage
+    component: FormPage
+  },
+  {
+    path: "/scrollTop",
+    name: "ScrollTop",
+    auth: true,
+    cache: false, //是否缓存
+    component: ScrollTop
   }
 ];

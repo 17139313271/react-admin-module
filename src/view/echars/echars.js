@@ -198,7 +198,7 @@ class Echars extends Component {
         >
           <div
             id="main"
-            style={{ width: this.state.echarsItemWidth, height: 400, }}
+            style={{ width: this.state.echarsItemWidth, height: 400 }}
           ></div>
         </div>
         <div className="echars-item">
@@ -206,13 +206,13 @@ class Echars extends Component {
             <Col span={12}>
               <div
                 id="main1"
-                style={{ width: this.state.echarsItemWidth / 2, height: 400, }}
+                style={{ width: this.state.echarsItemWidth / 2, height: 400 }}
               ></div>
             </Col>
             <Col span={12}>
               <div
                 id="main2"
-                style={{ width: this.state.echarsItemWidth / 2, height: 400, }}
+                style={{ width: this.state.echarsItemWidth / 2, height: 400 }}
               ></div>
             </Col>
           </Row>

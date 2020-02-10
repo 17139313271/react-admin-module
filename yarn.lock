@@ -11297,6 +11297,11 @@ react-redux@^7.1.3:
     prop-types "^15.7.2"
     react-is "^16.9.0"
 
+react-router-cache-route@^1.8.4:
+  version "1.8.4"
+  resolved "https://registry.npm.taobao.org/react-router-cache-route/download/react-router-cache-route-1.8.4.tgz#57523803f14edd1e04c2de951451d97c5d27c971"
+  integrity sha1-V1I4A/FO3R4Ewt6VFFHZfF0nyXE=
+
 react-router-dom@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-5.1.2.tgz#06701b834352f44d37fbb6311f870f84c76b9c18"
